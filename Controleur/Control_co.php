@@ -1,9 +1,12 @@
 <?php
 include '../Modele/conectbdd.php';
 include("../Modele/cobdd.php");
-	class connexion{
+
+
+class connexion{
+
 		private $mail,$password,$erreur;
-	}
+	
 	$password="";
 	$mail="";
 	$erreur="";
@@ -27,5 +30,7 @@ include("../Modele/cobdd.php");
  		$res="<span>Connecté<span><br>";
  	}
  	}
+
+ 	
 require '../Vue/vue_co.php';
 ?>

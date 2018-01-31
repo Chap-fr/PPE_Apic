@@ -1,11 +1,17 @@
 <?php
 include '../Modele/cobdd.php';
 
-$requ = "SELECT  * FROM Produit";
-$reponse = $bdd->query($requ);
+class Boutique{
+
+
+public function setTableBoutique{
 
 
 
+	$requete = "SELECT  * FROM Produit";
+	$reponse = $bdd->query($requete);
+	}
 
+}
 require '../Vue/vue_boutique.php';
 ?>

@@ -1,40 +1,52 @@
 <?php
-  require 'header.php';
-?>
-  
-<div class="container-fluid text-center">    
-  <div class="row content">
-    <div class="col-sm-2 sidenav">
-      <p><a href="#">Link</a></p>
-      <p><a href="#">Link</a></p>
-      <p><a href="#">Link</a></p>
-    </div>
-    <div class="col-sm-8 text-left"> 
-      <h1>Accueil</h1></br></br>
-    <div class="col-sm-4 s">
-      <p>Passioné d'apiculture, j'élève des abeilles et produis du miel en seine et marne depuis 2001.
-          Je suis installé dans le village de La Haute Maison entre les villes de Crécy La Chapelle, Meaux, Coulommiers et La ferté sous Jouarre.
-          Je possède également des ruches sur les hauteurs de Crécy La Chapelle mais aussi en bordure de la forêt régionale de Ferrières.
+  require "header.php";
 
-      </p>
-    </div>
-    <div class="col-sm-4 s">
-      <img src="images/img/Homme.jpg" width="200" height="150" class="d-inline-block align-top" alt="">
-    </div>
-      <hr>
-    </div>
-    <div class="col-sm-2 sidenav">
-      <div class="well">
-        <p>ADS</p>
-      </div>
-      <div class="well">
-        <p>ADS</p>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="container-fluid text-center">
 
-<?php
-  require 'footer.php';
+$page = isset($_GET['page']) ? $_GET['page'] :0;
+
+// if (isset($_GET['page'])){
+//  $page = $_GET['page'];
+// }else{
+//  $page = 0;
+// }
+
+//instanciation de la classe controleur
+$unC = new controleur("localhost" ,"root" ,"","bdd_ppe");
+
+switch ($page) {
+
+  case 1:
+    /*$unC->setTable("candidat");
+    $resultats = $unC->selectAll();*/
+    include("./Vue/vueBoutique.php");
+  break;
+
+  case 2:
+/*    $unC->setTable("etat");
+    $resultats = $unC->selectAll();*/
+    include("./Vue/vueFormation.php");
+  break;
+
+
+  case 3 :
+    /*$unC->setTable("etatPermis");
+    $resultats = $unC->selectAll();*/
+    include("./Vue/vuePanier.php");
+  break;
+
+
+  case 4 :
+    /*$unC->setTable("etatPermis");
+    $resultats = $unC->selectAll();*/
+    include("./Vue/vueInscription.php");
+  break;
+
+  case 5 :
+    /*$unC->setTable("etatPermis");
+    $resultats = $unC->selectAll();*/
+    include("./Vue/vueConnexion.php");
+  break;
+}
+
+  require "footer.php";
 ?>

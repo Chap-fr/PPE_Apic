@@ -1,31 +1,45 @@
 <?php
-	class Modele
-	{
-		private $pdo;
-		private $table;
-		public function __construct( $bdd, $user, $mdp, $serveur ='localhost')
-		{
-			$this->pdo = new PDO("mysql:dbname=$bdd;host=$serveur",$user,$mdp);
-			$this->pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-			$this->pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_OBJ);
+
+
+class Modele{
+
+
+	private $pdo;
+	private $table;
+
+	public function __construct ($serveur, $user, $mdp, $bdd){
+		try {
+
+			$this->pdo = new PDO("mysql:host=".$serveur.";dbname=".$bdd, $user, $mdp);
+
+
+
+			
+		} catch (Exeption $exp) {
+			echo "connexion impossible à :" .$serveur."/".$bdd;
+
 		}
+	}
 
-		public function query($query, $params = false){
-			if($params){
-				$req = $this->pdo->prepare($query);
-				$req->execute($params);
-			}else{
-				$req = $this->pdo->query($query);
-			}
-			return $req;
+	public function setTable($table){
+		$this->table=$table;
+	}
+	public function selectAll(){
+
+		$requete = "select * from " .$this->table;
+
+		//si co pdo est null() retourne null
+		if($this->pdo != null){
+			$select = $this->pdo->prepare($requete);
+			$select->execute();
+			$resultats = $select->fetchAll();
+			return $resultats;
+
+		}else {
+			return null;
 		}
-
-
-
-
-		
+	}	
 }
-	
 ?>
 
 

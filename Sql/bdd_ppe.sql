@@ -1,7 +1,7 @@
-DROP DATABASE IF EXISTS MLR1;
+DROP DATABASE IF EXISTS bdd_ppe;
 
-CREATE DATABASE IF NOT EXISTS MLR1;
-USE MLR1;
+CREATE DATABASE IF NOT EXISTS bdd_ppe;
+USE bdd_ppe;
 # -----------------------------------------------------------------------------
 #       TABLE : COMMANDE
 # -----------------------------------------------------------------------------
