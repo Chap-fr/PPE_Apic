@@ -1,8 +1,10 @@
 <?php
-include '../Modele/conectbdd.php';
+require '../Modele/conectbdd.php';
 require '../Vue/vue_compte.php';
 
 	class CreaCompte{
+
+		
 		private $nom ,$prenom,$pass,$passConfirm,$adresse,$Tel,$mail,$success,$erreur;
 
 //On initialise les données
@@ -15,7 +17,7 @@ require '../Vue/vue_compte.php';
 			$this->Tel="";
 			$this->mail="";
 			$success="";
-			$erreur=0;
+			$erreur=0é
 		}
 	}
 

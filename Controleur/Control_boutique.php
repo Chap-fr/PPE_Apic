@@ -1,5 +1,5 @@
 <?php
-include '../Modele/cobdd.php';
+include './Modele/cobdd.php';
 
 class Boutique{
 
@@ -13,5 +13,3 @@ public function setTableBoutique{
 	}
 
 }
-require '../Vue/vue_boutique.php';
-?>

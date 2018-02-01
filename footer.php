@@ -1,8 +1,9 @@
-
 <footer class="container-fluid text-center">
-  <p>Site créé par Ligne3 - 2017</p>
-  <p><a href="#">A propos</a>
-
+	<nav class="navbar navbar-default">		
+  		<p class="signature">Site créé par Apic® - 2018</p>
+  		<p><a href="index.php?page=6">A propos</a> 
+  		<a href="index.php?page=7">Contact</a>
+  	</nav>
 </footer>
 
 </body>

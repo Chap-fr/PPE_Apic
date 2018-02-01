@@ -11,32 +11,28 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
+
 <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>                        
       </button>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li><a href="index.php"><img src="images/icone/logo.png"  width="25" height="25"></a></li>
+        <li><a href="index.php"><img src="images/icone/logo.png" width="25" height="25"></a></li>
 
-        <li><a href="index.php?page=1">Boutique</a></li>
+        <li><a href="?page=1">Boutique</a></li>
         <li><a href="index.php?page=2">Formations</a></li>
-        <li><a href="index.php?page=1">Forum</a></li>
-		<li>			
+        <li><a href="index.php?page=10">Essaims</a></li>			
       </ul>
 
       <ul class="nav navbar-nav navbar-right">
-                <li><a href="index.php?page=3"><img src="images/icone/panier.png"  width="20" height="20"> Panier</a></li>
-      	   <ul class="nav navbar-nav navbar-right">
+      <li><a href="index.php?page=3"><img src="images/icone/panier.png"  width="20" height="20"> Panier</a></li>
       <li><a href="index.php?page=4"><span class="glyphicon glyphicon-user"></span> Inscription</a></li>
       <li><a href="index.php?page=5"><span class="glyphicon glyphicon-log-in"></span> Connexion</a></li>
 
       </ul>
     </div>
   </div>
-</nav
+</nav>
