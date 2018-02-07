@@ -4,11 +4,6 @@ include('./modele/model.class.php');
 
 class Controleur{
 
-	public function __construct($serveur, $bdd, $user, $mdp){
-
-		$this->unModel = new Modele($serveur, $bdd, $user, $mdp);
-
-	}
 
 	public function setTable($table){
 

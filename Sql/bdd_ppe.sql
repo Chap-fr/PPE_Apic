@@ -2,7 +2,6 @@ DROP DATABASE IF EXISTS bdd_ppe;
 
 CREATE DATABASE IF NOT EXISTS bdd_ppe;
 USE bdd_ppe;
-
 # -----------------------------------------------------------------------------
 #       TABLE : COMMANDE
 # -----------------------------------------------------------------------------

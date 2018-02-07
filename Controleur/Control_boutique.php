@@ -1,14 +1,18 @@
 <?php
-
-
+/*
 
 class Boutique{
 
 
-	public function setTableBoutique{
+public function setTableBoutique{
 
-		$requete = "SELECT * FROM Produit;";
-		$reponse = $bdd->query($requete);
+
+
+	$requete = "SELECT  * FROM Produit";
+	$reponse = $bdd->query($requete);
 	}
+	
 
-}
+
+}*/
+require './Vue/vue_boutique.php';

@@ -22,7 +22,7 @@
       <ul class="nav navbar-nav">
         <li><a href="index.php"><img src="images/icone/logo.png" width="25" height="25"></a></li>
 
-        <li><a href="index.php?page=1">Boutique</a></button></li>
+        <li><a href="?page=1">Boutique</a></li>
         <li><a href="index.php?page=2">Formations</a></li>
         <li><a href="index.php?page=10">Essaims</a></li>			
       </ul>
@@ -36,5 +36,3 @@
     </div>
   </div>
 </nav>
-
-          
