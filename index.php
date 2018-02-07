@@ -5,7 +5,6 @@ require "header.php";
 
 $page = isset($_GET['page']) ? $_GET['page'] :0;
 
-//instanciation de la classe controleur
 $unC = new controleur("localhost" ,"root" ,"","bdd_ppe");
 
 switch ($page) {
