@@ -9,7 +9,7 @@
       <div class="col-sm-4">
         <p>Je vous propose des formations découverte de groupe ou seul au métier d'apiculteur.</p></br>
         <p>La Formation a un durée d'un jour à une semaine.</p>
-        <label>Vous pouvez prendre rendez-vous &nbsp;</label>
+        <label>Vous pouvez prendre rendez-vous &nbsp;</label>-
         <a href="index.php?page=8"><button>ici</button></a> 
       </div>
         <div class="col-sm-4"><img src="./images/img/Apiculteurs.jpg"></div>

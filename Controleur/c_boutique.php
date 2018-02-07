@@ -1,5 +1,4 @@
 <?php
-include './Modele/cobdd.php';
 
 class Boutique{
 

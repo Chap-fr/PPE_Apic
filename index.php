@@ -27,7 +27,7 @@ switch ($page) {
   break;
 
   case 5 :
-    include("Vue/vue_connexion.php");
+    include("Controleur/control_co.php");
   break;
 
   case 6 :

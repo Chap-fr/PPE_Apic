@@ -1,9 +1,7 @@
 <?php
-include '../Modele/conectbdd.php';
-include("../Modele/cobdd.php");
 
 
-class connexion{
+/*class connexion{
 
 		private $mail,$password,$erreur;
 	
@@ -31,6 +29,6 @@ class connexion{
  	}
  	}
 
- 	
-require '../Vue/vue_co.php';
+ 	*/
+require './Vue/vue_connexion.php';
 ?>
