@@ -11,43 +11,42 @@ $unC = new controleur("localhost" ,"root" ,"","bdd_ppe");
 switch ($page) {
 
   case 1: 
-    include("Vue/vue_boutique.php");
+    include("Controleur/c_boutique.php");
   break;
 
   case 2:
-    include("Vue/vue_formation.php");
+    include("Controleur/c_formation.php");
   break;
-
   case 3 :
-    include("Vue/vue_panier.php");
+    include("Controleur/c_panier.php");
   break;
 
   case 4 :
-    include("Vue/vue_inscription.php");
+    include("Controleur/c_inscription.php");
   break;
 
   case 5 :
-    include("Controleur/control_co.php");
+    include("Controleur/c_connexion.php");
   break;
 
   case 6 :
-    include("Vue/vue_apropos.php");
+    include("Controleur/c_apropos.php");
   break;
 
   case 7 :
-    include("Vue/vue_contact.php");
+    include("Controleur/c_contact.php");
   break;
 
   case 8 :
-    include("Vue/vue_inscripFormation.php");
+    include("Controleur/c_inscripFormation.php");
   break;
 
   case 9 :
-    include("Vue/vue_log.php");
+    include("Controleur/c_log.php");
   break;
 
   case 10 :
-    include("Vue/vue_essaims.php");
+    include("Controleur/c_essaims.php");
   break;
 }
 
