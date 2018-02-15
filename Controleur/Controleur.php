@@ -1,8 +1,8 @@
 <?php 
-include('./modele/model.class.php');
 
 
-class Controleur{
+
+/*class Controleur{
 
 
 	public function setTable($table){
@@ -15,7 +15,7 @@ class Controleur{
 
 		return $this->unModel->selectAll();
 	}
-}
+}*/
 
 
 
