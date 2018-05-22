@@ -3,44 +3,35 @@
       border-radius: 0;
     }
     
-    /* Set height of the grid so .sidenav can be 100% (adjust as needed) 
-    .row.content {
-
-      height: 500px;
-    }
-    
-     Set gray background color and 100% height */
-    .sidenav {
-      
-
-      margin-bottom: auto;
-      background-color: #f1f1f1;
-      height: 50%;
-    }
 
 
     p.signature{
-      color:orange;
+      
 
     }
- 
-    footer {
-      background-color: white;
-      color: white;
+
+    img.logoBee{
+      width: 50px;
+      height: 50px;
     }
     
+ .navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+    
     /* On small screens, set height to 'auto' for sidenav and grid */
-    @media screen and (max-width: 767px) {
+ /*   @media screen and (max-width: 767px) {
       .sidenav {
         height: auto;
         padding: 15px;
       }
       .row.content {height:auto;} 
     }
-
-    textarea{
+*/
+  /*  textarea{
       width: 45%;
       height: 30%;
-    }
-
-    
+    }*/

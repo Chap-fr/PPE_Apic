@@ -1,6 +1,6 @@
 <?php
-require '../Modele/conectbdd.php';
-require '../Vue/vue_compte.php';
+require './Modele/conectbdd.php';
+require './Vue/vue_compte.php';
 
 	class CreaCompte{
 
@@ -21,12 +21,6 @@ require '../Vue/vue_compte.php';
 		}
 	}
 
-
-
-
-
-
-
 	if (isset($_POST['enregistrer'])){
 		$nom=$_POST["nom"];
 		$prenom=$_POST["prenom"];
@@ -42,8 +36,5 @@ require '../Vue/vue_compte.php';
 			$req=$bdd->querry("INSERT INTO particulier (NOMPARTICULIER,PRENOMPARTICULIER,ADRESSEC,TELC,MAILC,MDPC) VALUES (".$nom.",".$prenom.",".$adresse.",".$Tel.",".$mail.",".$pass.") ");
 			$success = "/br><span> L'enregistrement à été effectué</span></br>";
 		}
-
 	}
-
-
 ?>

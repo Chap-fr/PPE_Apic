@@ -11,30 +11,36 @@
   <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-
-<nav class="navbar navbar-default">
+<header>
+  <nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
       </button>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-        <li><a href="index.php"><img src="images/icone/logo.png" width="25" height="25"></a></li>
 
-        <li><a href="index.php?page=1">Boutique</a></button></li>
-        <li><a href="index.php?page=2">Formations</a></li>
-        <li><a href="index.php?page=10">Essaims</a></li>			
+      <ul class="nav navbar-nav">
+        <li><img src="images/logo.png" class="logoBee"></li>
+        <li><a href="index.php?page=1"><span class="glyphicon glyphicon-home"></span> Accueil</a></li>
+        <li><a href="index.php?page=2"><span class="glyphicon glyphicon-list"></span> Formations</a></li>
+        <li><a href="index.php?page=3"><span class="glyphicon glyphicon-book"></span> Catalogue</a></li>
+        <li><a href="index.php?page=4"><span class="glyphicon glyphicon-comment"></span> Contact</a></li>
+			
       </ul>
 
       <ul class="nav navbar-nav navbar-right">
-      <li><a href="index.php?page=3"><img src="images/icone/panier.png"  width="20" height="20"> Panier</a></li>
-      <li><a href="index.php?page=4"><span class="glyphicon glyphicon-user"></span> Inscription</a></li>
-      <li><a href="index.php?page=5"><span class="glyphicon glyphicon-log-in"></span> Connexion</a></li>
-
-      </ul>
-    </div>
-  </div>
+       <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span> Mon Compte
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="index.php?page=5"> Espace</a></li>
+            <li><a href="index.php?page=6"> Connexion</a></li>
+            <li><a href="index.php?page=7"> Inscription</a></li>
+          </ul>
+        </li>
+</div> 
+</div>
 </nav>
-
+</header>
           

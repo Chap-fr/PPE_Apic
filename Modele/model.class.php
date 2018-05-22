@@ -4,10 +4,10 @@
 class Modele{
 
 
-	private $pdo;
+	protected $pdo;
 	private $table;
 
-	public function __construct ($serveur, $user, $mdp, $bdd){
+	public function __construct ($serveur, $bdd, $user, $mdp){
 		try {
 
 			$this->pdo = new PDO("mysql:host=".$serveur.";dbname=".$bdd, $user, $mdp);
@@ -26,7 +26,7 @@ class Modele{
 	}
 	public function selectAll(){
 
-		$requete = "select * from " .$this->table;
+		$requete = "select * from " .$this->table.";";
 
 		//si co pdo est null() retourne null
 		if($this->pdo != null){
@@ -38,8 +38,31 @@ class Modele{
 		}else {
 			return null;
 		}
-	}	
-}
+	}
+
+	public function insert ($tab){
+
+			$champs = array();
+			$donnees = array();
+			$valeurs = array();
+			
+			foreach($tab as $cle=>$valeur)
+			{
+				$champs[]=$cle;
+				$valeurs[] = ":".$cle;
+				$donnees[":".$cle] = $valeur;
+			}
+			
+			$listeChamps = implode(",", $champs);
+			$listeDonnees = implode(",", $valeurs);
+			
+			$requete = "insert into ".$this->table." (".$listeChamps.") values (".$listeDonnees.")";
+			$insert = $this->pdo->prepare($requete);
+			$insert->execute($donnees);
+		}	
+	}
+
+
 ?>
 
 

@@ -1,5 +1,5 @@
 <?php 
-include('./modele/model.class.php');
+//include('./modele/model.class.php');
 
 
 class Controleur{
