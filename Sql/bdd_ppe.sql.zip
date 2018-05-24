@@ -1,7 +1,7 @@
-DROP DATABASE IF EXISTS db730661205;
+/*DROP DATABASE IF EXISTS bdd_ppe;*/
 
-CREATE DATABASE IF NOT EXISTS db730661205;
-USE db730661205;
+CREATE DATABASE IF NOT EXISTS bdd_ppe;
+USE bdd_ppe;
 
 
 # -----------------------------------------------------------------------------

@@ -1,23 +1,273 @@
-<div class="container-fluid text-center">    
-  <div class="row content">
-    <div class="col-sm-2 sidenav">
-     
-    </div>
-    <div class="col-sm-8 text-left"> 
-      <h1>Formation</h1>
-        <hr>
-      <div class="col-sm-4">
-        <p>Je vous propose des formations découverte de groupe ou seul au métier d'apiculteur.</p></br>
-        <p>La Formation a un durée d'un jour à une semaine.</p>
-        <label>Vous pouvez prendre rendez-vous &nbsp;</label>-
-        <a href="index.php?page=8"><button>ici</button></a> 
-      </div>
-        <div class="col-sm-4"><img src="./images/img/Apiculteurs.jpg"></div>
+
+<div class="container">   
+  <div class="well well-sm">
+    <div class="row">
+
+
+<div class="col-sm-12 text-center" id="1">
+  <div class="thumbnail">
+    <h3 style="color:orange;"><b style="color: black;">1</b><br>Formation débutant/découverte</h3>
+            <hr>
+        <img src="images/catalogue/decouverte.jpg" alt="imagedec"><br>
+
+            <div class="main-login main-center">
+              <form class="form-horizontal" method="post" action="index.php?page=2">
+            
+                <div class="form-group">
+                  <label for="name" class="col-md-4 control-label">Nombre de personnes</label>
+                  <div class="col-md-4">
+                    <div class="input-group">
+                      <span class="input-group-addon"><i class="glyphicon glyphicon-user" aria-hidden="true"></i></span>
+                      <input type="text" class="form-control" name="nbrpers" id="nombrepersonne"  placeholder="Entrer un seul chiffre"/>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="name" class="col-md-4 control-label">Jour choisi</label>
+                  <div class="col-md-4">
+                    <div class="input-group">
+                      <span class="input-group-addon"><i class="glyphicon glyphicon-calendar" aria-hidden="true"></i></span>
+                      <input type="date" class="form-control" name="date" min="2018-02-01" max="2022-04-20" required/>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="form-group ">
+                  <div class="col-md-12 text-center">
+                    <button type="submit1" class="btn btn-primary btn-lg" name"">S'enregistrer</button>
+                  </div>
+                </div>
+        </fieldset>
       
-    </div>
-    <div class="col-sm-2 sidenav">
-     
-      </div>
+        </form>
+      </div> 
     </div>
   </div>
+
+
+<!--  -->
+
+
+<div class="col-sm-12 text-center" id="2">
+  <div class="thumbnail">
+     <h3 style="color:orange;"><b style="color: black;">2</b><br>Formation intermédiaire</h3>
+            <hr>
+        <img src="images/catalogue/images.jpg" alt="imageint"><br>
+
+            <div class="main-login main-center">
+              <form class="form-horizontal" method="post" action="index.php?page=2">
+            
+               <div class="form-group">
+                  <label for="name" class="col-md-4 control-label">Nombre de personnes</label>
+                  <div class="col-md-4">
+                    <div class="input-group">
+                      <span class="input-group-addon"><i class="glyphicon glyphicon-user" aria-hidden="true"></i></span>
+                      <input type="text" class="form-control" name="nbrpers" id="nombrepersonne"  placeholder="Entrer un seul chiffre"/>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="name" class="col-md-4 control-label">Jour choisi</label>
+                  <div class="col-md-4">
+                    <div class="input-group">
+                      <span class="input-group-addon"><i class="glyphicon glyphicon-calendar" aria-hidden="true"></i></span>
+                      <input type="date" class="form-control" name="date" min="2018-02-01" max="2022-04-20" required/>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="form-group ">
+                  <div class="col-md-12 text-center">
+                    <button type="submit2" class="btn btn-primary btn-lg" name"">S'enregistrer</button>
+                  </div>
+                </div>
+        </fieldset>
+      
+        </form>
+      </div> 
+    </div>
+  </div>
+
+  <!--  -->
+
+    <div class="col-sm-12 text-center" id="3">
+  <div class="thumbnail">
+    <h3 style="color:orange;"><b style="color: black;">3</b><br>Stage séminaire découverte</h3>
+          <hr>
+        <img src="images/catalogue/index.jpg" alt="..."><br>
+
+            <div class="main-login main-center">
+              <form class="form-horizontal" method="post" action="index.php?page=2">
+            
+               <div class="form-group">
+                  <label for="name" class="col-md-4 control-label">Nombre de personnes</label>
+                  <div class="col-md-4">
+                    <div class="input-group">
+                      <span class="input-group-addon"><i class="glyphicon glyphicon-user" aria-hidden="true"></i></span>
+                      <input type="text" class="form-control" name="nbrpers" id="nombrepersonne"  placeholder="Entrer un seul chiffre"/>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="name" class="col-md-4 control-label">Jour choisi</label>
+                  <div class="col-md-4">
+                    <div class="input-group">
+                      <span class="input-group-addon"><i class="glyphicon glyphicon-calendar" aria-hidden="true"></i></span>
+                      <input type="date" class="form-control" name="date" min="2018-02-01" max="2022-04-20" required/>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="form-group ">
+                  <div class="col-md-12 text-center">
+                    <button type="submit3" class="btn btn-primary btn-lg" name"">S'enregistrer</button>
+                  </div>
+                </div>
+        </fieldset>
+      
+        </form>
+      </div> 
+    </div>
+  </div>
+
+  <!--  -->
+
+    <div class="col-sm-12 text-center" id="4">
+  <div class="thumbnail">
+     <h3 style="color:orange;"><b style="color: black;">4</b><br>Formation entreprise</h3>
+            <hr><img src="images/catalogue/elevage_essaims_pm.jpg" alt="..."><br>
+
+            <div class="main-login main-center">
+              <form class="form-horizontal" method="post" action="index.php?page=2">
+            
+                <div class="form-group">
+                  <label for="name" class="col-md-4 control-label">Nombre de personnes</label>
+                  <div class="col-md-4">
+                    <div class="input-group">
+                      <span class="input-group-addon"><i class="glyphicon glyphicon-user" aria-hidden="true"></i></span>
+                      <input type="text" class="form-control" name="nbrpers" id="nombrepersonne"  placeholder="Entrer un seul chiffre"/>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="name" class="col-md-4 control-label">Jour choisi</label>
+                  <div class="col-md-4">
+                    <div class="input-group">
+                      <span class="input-group-addon"><i class="glyphicon glyphicon-calendar" aria-hidden="true"></i></span>
+                      <input type="date" class="form-control" name="date" min="2018-02-01" max="2022-04-20" required/>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="form-group ">
+                  <div class="col-md-12 text-center">
+                    <button type="submit4" class="btn btn-primary btn-lg" name"">S'enregistrer</button>
+                  </div>
+                </div>
+        </fieldset>
+      
+        </form>
+      </div> 
+    </div>
+  </div>
+
+     <div class="col-sm-12 text-center" id="5">
+  <div class="thumbnail">
+    <h3 style="color:orange;"><b style="color: black;">5</b><br>Certification apicole découverte</h3>
+            <hr> <img src="images/catalogue/inpdex.jpg" alt="..."><br>
+
+            <div class="main-login main-center">
+              <form class="form-horizontal" method="post" action="index.php?page=2">
+            
+                <div class="form-group">
+                  <label for="name" class="col-md-4 control-label">Nombre de personnes</label>
+                  <div class="col-md-4">
+                    <div class="input-group">
+                      <span class="input-group-addon"><i class="glyphicon glyphicon-user" aria-hidden="true"></i></span>
+                      <input type="text" class="form-control" name="nbrpers" id="nombrepersonne"  placeholder="Entrer un seul chiffre"/>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="name" class="col-md-4 control-label">Jour choisi</label>
+                  <div class="col-md-4">
+                    <div class="input-group">
+                      <span class="input-group-addon"><i class="glyphicon glyphicon-calendar" aria-hidden="true"></i></span>
+                      <input type="date" class="form-control" name="date" min="2018-02-01" max="2022-04-20" required/>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="form-group ">
+                  <div class="col-md-12 text-center">
+                    <button type="submit5" class="btn btn-primary btn-lg" name"">S'enregistrer</button>
+                  </div>
+                </div>
+        </fieldset>
+      
+        </form>
+      </div> 
+    </div>
+  </div>
+
+  <div class="col-sm-12 text-center" id="6">
+  <div class="thumbnail">
+       <h3 style="color:orange;"><b style="color: black;">6</b><br>Certification apicole intermédiaire</h3>
+            <hr>
+        <img src="images/catalogue/certif.jpg" alt="k"><br>
+
+            <div class="main-login main-center">
+              <form class="form-horizontal" method="post" action="index.php?page=2">
+            
+                <div class="form-group">
+                  <label for="name" class="col-md-4 control-label">Nombre de personnes</label>
+                  <div class="col-md-4">
+                    <div class="input-group">
+                      <span class="input-group-addon"><i class="glyphicon glyphicon-user" aria-hidden="true"></i></span>
+                      <input type="text" class="form-control" name="nbrpers" id="nombrepersonne"  placeholder="Entrer un seul chiffre"/>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="name" class="col-md-4 control-label">Jour choisi</label>
+                  <div class="col-md-4">
+                    <div class="input-group">
+                      <span class="input-group-addon"><i class="glyphicon glyphicon-calendar" aria-hidden="true"></i></span>
+                      <input type="date" class="form-control" name="date" min="2018-02-01" max="2022-04-20" required/>
+                    </div>
+                  </div>
+                </div>
+
+
+                <div class="form-group ">
+                  <div class="col-md-12 text-center">
+                    <button type="submit6" class="btn btn-primary btn-lg" name"">S'enregistrer</button>
+                  </div>
+                </div>
+        </fieldset>
+      
+        </form>
+      </div> 
+    </div>
+  </div>
+
+
+
+   </div>
+  </div>
 </div>
+  
+
+    
+  

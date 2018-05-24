@@ -3,9 +3,11 @@
 require "header.php";
 
 
+
 $page = isset($_GET['page']) ? $_GET['page'] :0;
 
-//$unC = new controleur("localhost" ,"root" ,"","bdd_ppe");
+//$uneBdd = new inscriptionParticulier("db730661205.db.1and1.com", "bdd_ppe","dbo730661205","");
+
 
 switch ($page) {
 
@@ -33,7 +35,23 @@ switch ($page) {
   break;
 
   case 7:
-    include("Controleur/c_inscription.php");
+    include("Controleur/c_pageInscription.php");
+  break;
+
+  case 8:
+    include("Controleur/c_inscriptionParticulier.php");
+  break;
+
+   case 9:
+    include("Controleur/c_inscriptionEntreprise.php");
+  break;
+
+   case 10:
+    include("Controleur/c_apropos.php");
+  break;
+
+   case 11:
+    include("Controleur/c_.php");
   break;
 
 }

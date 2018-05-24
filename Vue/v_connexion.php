@@ -32,7 +32,7 @@
 
               <div class="form-group ">
               <div class="col-md-12 text-center">
-              <button type="button" class="btn btn-primary btn-lg">Se connecter</button>
+              <button type="submit" class="btn btn-primary btn-lg">Se connecter</button>
                    </div>
       </div>
       </fieldset>
