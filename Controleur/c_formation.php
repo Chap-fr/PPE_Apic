@@ -23,13 +23,10 @@ private $unModele;
 
 }
 
-$unModele = new inscriptionFormation(" "," ", " ", " ");
+/*$unModele = new Formation(" "," ", " ", " ");
 $donnees = $unModele->selectAll();
 
-	if (isset($_POST["subform1"])) {
-		$tab =   array('' => , );
-		# code...
-	}
+*/
 
 require './Vue/v_formation.php';
 

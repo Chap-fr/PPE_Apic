@@ -34,7 +34,6 @@
           <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span> Mon Compte
           <span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="index.php?page=5"> Espace</a></li>
             <li><a href="index.php?page=6"> Connexion</a></li>
             <li><a href="index.php?page=7"> Inscription</a></li>
           </ul>
