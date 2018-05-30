@@ -11,15 +11,7 @@
 
 					<form class="form-horizontal" method="post" action="index.php?page=9">
 						
-						<div class="form-group">
-							<label for="name" class="col-md-4 control-label">Identifiant</label>
-							<div class="col-md-4">
-								<div class="input-group">
-									<span class="input-group-addon"><i class="glyphicon glyphicon-user" aria-hidden="true"></i></span>
-									<input type="text" class="form-control" name="identifiantc" id="identifiantE"  placeholder="Entrez votre nom"/>
-								</div>
-							</div>
-						</div>
+						
 
 						<div class="form-group">
 							<label for="name" class="col-md-4 control-label">Email</label>
@@ -90,7 +82,7 @@
 
 						<div class="form-group ">
 							 <div class="col-md-12 text-center">
-							<button type="submit" class="btn btn-primary btn-lg">S'enregistrer</button>
+							<button type="submit" class="btn btn-primary btn-lg" name="submit">S'enregistrer</button>
 						</div>
 					</div>
 						</fieldset>

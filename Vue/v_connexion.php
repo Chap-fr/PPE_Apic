@@ -6,7 +6,7 @@
                     <hr />
                
 
-          <form class="form-horizontal" method="post" action="#">
+          <form class="form-horizontal" method="post" action="index.php?page=6">
             
             <div class="form-group">
               <label for="email" class="col-md-4 control-label">Email</label>
@@ -32,7 +32,7 @@
 
               <div class="form-group ">
               <div class="col-md-12 text-center">
-              <button type="submit" class="btn btn-primary btn-lg">Se connecter</button>
+              <button type="submit" class="btn btn-primary btn-lg" name="submitco">Se connecter</button>
                    </div>
       </div>
       </fieldset>

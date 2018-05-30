@@ -1,20 +1,8 @@
-DROP DATABASE IF EXISTS db730661205;
-
+/*DROP DATABASE IF EXISTS db730661205;
+*/
 CREATE DATABASE IF NOT EXISTS db730661205;
 USE db730661205;
 
-
-# -----------------------------------------------------------------------------
-#       TABLE : PERIODE
-# -----------------------------------------------------------------------------
-
-CREATE TABLE IF NOT EXISTS PERIODE
- (
-   NUMEROPERIODE INT(30) NOT NULL AUTO_INCREMENT,
-   DATEPERIODE DATE   
-   , PRIMARY KEY (NUMEROPERIODE) 
- ) 
- comment = "";
 
 # -----------------------------------------------------------------------------
 #       TABLE : FORMATION
@@ -55,8 +43,8 @@ CREATE TABLE IF NOT EXISTS CLIENT
    TELC INT(30)   ,
    MAILC VARCHAR(128)   ,
    MDPC VARCHAR(128)   ,
-   IDENTIFIANTC VARCHAR(128)   
-   , PRIMARY KEY (NUMEROC) 
+     
+   PRIMARY KEY (NUMEROC) 
  ) 
  comment = "";
 
@@ -74,8 +62,8 @@ CREATE TABLE IF NOT EXISTS ENTREPRISE
    TELC INT(30)   ,
    MAILC VARCHAR(128)   ,
    MDPC VARCHAR(128)   ,
-   IDENTIFIANTC VARCHAR(128)   
-   , PRIMARY KEY (NUMEROC) 
+   
+   PRIMARY KEY (NUMEROC) 
  ) 
  comment = "";
 
@@ -87,8 +75,8 @@ CREATE TABLE IF NOT EXISTS TYPE_FORMATION
  (
    NUMTYPE INT(30) NOT NULL  AUTO_INCREMENT,
    PRIXTYPE INT(30),
-   LIBELLEFORMATION VARCHAR(255)   
-   , PRIMARY KEY (NUMTYPE) 
+   LIBELLEFORMATION VARCHAR(255),
+  PRIMARY KEY (NUMTYPE) 
  ) 
  comment = "";
 
@@ -105,8 +93,8 @@ CREATE TABLE IF NOT EXISTS PARTICULIER
    TELC INT(30)   ,
    MAILC VARCHAR(128)   ,
    MDPC VARCHAR(128)   ,
-   IDENTIFIANTC VARCHAR(128)   
-   , PRIMARY KEY (NUMEROC) 
+     
+   PRIMARY KEY (NUMEROC) 
  ) 
  comment = "";
 

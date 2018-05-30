@@ -1,47 +1,50 @@
 <?php
-require 'Modele/model.class.php';
+require_once './Modele/model.class.php';
+session_start();
 
+class inscriptionParticulier{
 
-	class inscriptionParticulier{
-
+	private $unModele;
 		
-		private $IDENTIFIANTC, $NOMPARTICULIER ,$PRENOMPARTICULIER,$MDPC,$TELC,$ADRESSEC,$MAILC,$success,$erreur;
-
-//On initialise les données
-		public function __construct(){
-		
-			$this->NOMPARTICULIER="";
-			$this->PRENOMPARTICULIER="";
-			$this->MDPC="";
-		
-			$this->ADRESSEC="";
-			$this->TELC="";
-			$this->MAILC="";
-			$this->IDENTIFIANTC="";
-
-			$success="";
-			$erreur=0;
+		public function __construct ($serveur, $bdd, $user, $mdp)
+		{
+			$this->unModele = new Modele($serveur, $bdd, $user, $mdp);
+			$this->unModele->setTable("PARTICULIER");
 		}
-	}
-
-	if (isset($_POST['submit'])){
-
-		$IDENTIFIANTC=$_POST["identifiantc"];
-		$NOMPARTICULIER=$_POST["nomparticulier"];
-		$PRENOMPARTICULIER=$_POST["prenomparticulier"];
-		$MDPC=$_POST["mdpc"];
-		$ADRESSEC=$_POST["adresse"];
-		$TELC=$_POST["Tel"];
-		$MAILC=$_POST["mail"];
-
-		if($erreur==0){
-
+		public function selectAll()
+		{
+			return $this->unModele->selectAll();
 			
-			$req=$bdd->querry("INSERT INTO particulier (NOMPARTICULIER,PRENOMPARTICULIER,ADRESSEC,TELC,MAILC,MDPC, IDENTIFIANTC) VALUES (".$NOMPARTICULIER.",".$PRENOMPARTICULIER.",".$ADRESSEC.",".$TELC.",".$MAILC.",".$MDPC.",".$IDENTIFIANTC."); ");
-
-
-			//$success = "/br><span> L'enregistrement à été effectué</span></br>";
 		}
+		public function insert($tab){
+			return $this->unModele->insert($tab);
+		}
+
+}
+
+$unModel = new inscriptionParticulier('db730661205.db.1and1.com','db730661205','dbo730661205','Apicweb123!');
+
+//$unModel = new inscriptionParticulier('localhost','db730661205','root','');
+
+$donnees = $unModel->selectAll();
+
+
+	if(isset($_POST["submit"])){
+
+		$tab = array('NOMPARTICULIER' => $_POST["nomparticulier"],
+					'PRENOMPARTICULIER' => $_POST["prenomparticulier"],
+					'ADRESSEC' => $_POST["adressec"],
+					'TELC' => $_POST["telc"],
+					'MAILC' => $_POST["mailc"],
+					'MDPC' => $_POST["mdpc"]
+					
+		 );
+		
+		$inserer = $unModel->insert($tab);
 	}
 
-$unControleur = new inscriptionParticulier("localhost","bdd_ppe","root","");require './Vue/v_inscriptionParticulier.php';
+require './Vue/v_inscriptionParticulier.php';
+
+
+
+?>

@@ -1,5 +1,5 @@
 <?php
-//require "controleur/controleur.php";
+session_start();
 require "header.php";
 
 
@@ -10,6 +10,10 @@ $page = isset($_GET['page']) ? $_GET['page'] :0;
 
 
 switch ($page) {
+
+ case 0: 
+    include("Controleur/c_home.php");
+  break;
 
   case 1: 
     include("Controleur/c_home.php");

@@ -12,6 +12,17 @@
 
             <div class="main-login main-center">
               <form class="form-horizontal" method="post" action="index.php?page=2">
+
+
+                <div class="form-group">
+                  <label for="name" class="col-md-4 control-label">Email</label>
+                  <div class="col-md-4">
+                    <div class="input-group">
+                      <span class="input-group-addon"><i class="glyphicon glyphicon-user" aria-hidden="true"></i></span>
+                      <input type="text" class="form-control" name="email" id="email"  placeholder="Entrer un seul chiffre"/>
+                    </div>
+                  </div>
+                </div>
             
                 <div class="form-group">
                   <label for="name" class="col-md-4 control-label">Nombre de personnes</label>
@@ -36,7 +47,7 @@
 
                 <div class="form-group ">
                   <div class="col-md-12 text-center">
-                    <button type="submit1" class="btn btn-primary btn-lg" name"">S'enregistrer</button>
+                    <button type="submit1" class="btn btn-primary btn-lg" name="submit1">S'enregistrer</button>
                   </div>
                 </div>
         </fieldset>
@@ -58,6 +69,16 @@
 
             <div class="main-login main-center">
               <form class="form-horizontal" method="post" action="index.php?page=2">
+
+                 <div class="form-group">
+                  <label for="name" class="col-md-4 control-label">Email</label>
+                  <div class="col-md-4">
+                    <div class="input-group">
+                      <span class="input-group-addon"><i class="glyphicon glyphicon-user" aria-hidden="true"></i></span>
+                      <input type="text" class="form-control" name="email" id="email"  placeholder="Entrer un seul chiffre"/>
+                    </div>
+                  </div>
+                </div>
             
                <div class="form-group">
                   <label for="name" class="col-md-4 control-label">Nombre de personnes</label>
@@ -82,7 +103,7 @@
 
                 <div class="form-group ">
                   <div class="col-md-12 text-center">
-                    <button type="submit2" class="btn btn-primary btn-lg" name"">S'enregistrer</button>
+                    <button type="submit2" class="btn btn-primary btn-lg" name="submit2" >S'enregistrer</button>
                   </div>
                 </div>
         </fieldset>
@@ -102,6 +123,16 @@
 
             <div class="main-login main-center">
               <form class="form-horizontal" method="post" action="index.php?page=2">
+
+                 <div class="form-group">
+                  <label for="name" class="col-md-4 control-label">Email</label>
+                  <div class="col-md-4">
+                    <div class="input-group">
+                      <span class="input-group-addon"><i class="glyphicon glyphicon-user" aria-hidden="true"></i></span>
+                      <input type="text" class="form-control" name="email" id="email"  placeholder="Entrer un seul chiffre"/>
+                    </div>
+                  </div>
+                </div>
             
                <div class="form-group">
                   <label for="name" class="col-md-4 control-label">Nombre de personnes</label>
@@ -126,7 +157,7 @@
 
                 <div class="form-group ">
                   <div class="col-md-12 text-center">
-                    <button type="submit3" class="btn btn-primary btn-lg" name"">S'enregistrer</button>
+                    <button type="submit3" class="btn btn-primary btn-lg" name="submit3">S'enregistrer</button>
                   </div>
                 </div>
         </fieldset>
@@ -145,6 +176,16 @@
 
             <div class="main-login main-center">
               <form class="form-horizontal" method="post" action="index.php?page=2">
+
+                 <div class="form-group">
+                  <label for="name" class="col-md-4 control-label">Email</label>
+                  <div class="col-md-4">
+                    <div class="input-group">
+                      <span class="input-group-addon"><i class="glyphicon glyphicon-user" aria-hidden="true"></i></span>
+                      <input type="text" class="form-control" name="email" id="email"  placeholder="Entrer un seul chiffre"/>
+                    </div>
+                  </div>
+                </div>
             
                 <div class="form-group">
                   <label for="name" class="col-md-4 control-label">Nombre de personnes</label>
@@ -169,7 +210,7 @@
 
                 <div class="form-group ">
                   <div class="col-md-12 text-center">
-                    <button type="submit4" class="btn btn-primary btn-lg" name"">S'enregistrer</button>
+                    <button type="submit4" class="btn btn-primary btn-lg" name="submit4">S'enregistrer</button>
                   </div>
                 </div>
         </fieldset>
@@ -186,6 +227,16 @@
 
             <div class="main-login main-center">
               <form class="form-horizontal" method="post" action="index.php?page=2">
+
+                 <div class="form-group">
+                  <label for="name" class="col-md-4 control-label">Email</label>
+                  <div class="col-md-4">
+                    <div class="input-group">
+                      <span class="input-group-addon"><i class="glyphicon glyphicon-user" aria-hidden="true"></i></span>
+                      <input type="text" class="form-control" name="email" id="email"  placeholder="Entrer un seul chiffre"/>
+                    </div>
+                  </div>
+                </div>
             
                 <div class="form-group">
                   <label for="name" class="col-md-4 control-label">Nombre de personnes</label>
@@ -210,7 +261,7 @@
 
                 <div class="form-group ">
                   <div class="col-md-12 text-center">
-                    <button type="submit5" class="btn btn-primary btn-lg" name"">S'enregistrer</button>
+                    <button type="submit5" class="btn btn-primary btn-lg" name="submit5">S'enregistrer</button>
                   </div>
                 </div>
         </fieldset>
@@ -228,6 +279,16 @@
 
             <div class="main-login main-center">
               <form class="form-horizontal" method="post" action="index.php?page=2">
+
+                 <div class="form-group">
+                  <label for="name" class="col-md-4 control-label">Email</label>
+                  <div class="col-md-4">
+                    <div class="input-group">
+                      <span class="input-group-addon"><i class="glyphicon glyphicon-user" aria-hidden="true"></i></span>
+                      <input type="text" class="form-control" name="email" id="email"  placeholder="Entrer un seul chiffre"/>
+                    </div>
+                  </div>
+                </div>
             
                 <div class="form-group">
                   <label for="name" class="col-md-4 control-label">Nombre de personnes</label>
@@ -252,7 +313,7 @@
 
                 <div class="form-group ">
                   <div class="col-md-12 text-center">
-                    <button type="submit6" class="btn btn-primary btn-lg" name"">S'enregistrer</button>
+                    <button type="submit6" class="btn btn-primary btn-lg" name="submit6">S'enregistrer</button>
                   </div>
                 </div>
         </fieldset>

@@ -31,7 +31,11 @@
 
       <ul class="nav navbar-nav navbar-right">
        <li class="dropdown">
-          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span> Mon Compte
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-user"></span> <?php 
+          if(isset($_SESSION["mail"])== 1){
+              print_r($_SESSION["mail"]);
+            }else{
+                echo "Mon compte";} ?>
           <span class="caret"></span></a>
           <ul class="dropdown-menu">
             <li><a href="index.php?page=6"> Connexion</a></li>
